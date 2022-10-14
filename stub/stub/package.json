@@ -1,0 +1,23 @@
+{
+  "name": "v3-das",
+  "version": "1.0.0",
+  "description": "Blackshield V3 Data Access Service.",
+  "main": "index.js",
+  "scripts": {
+    "start":"./start.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/v3-das"
+  },
+  "author": "Vikas Sood",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "uuid-token-generator": "^1.0.0"
+  }
+}

@@ -1,0 +1,196 @@
+<div>
+    <!--Update form for API-->
+    <div *ngIf="href === '/api'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Toggle State</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        Rotate
+                    </button>
+                </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="mb-1">
+                        <label for="todoTitleAdd" class="form-label">App Name*</label>
+                        <input type="text" id="todoTitleAdd" name="todoTitleAdd"
+                            class="new-todo-item-title form-control is-invalid" placeholder="Title" required />
+                        <div class="invalid-feedback">This is invalid state.</div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder=""></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--Access Key-->
+    <div *ngIf="href === '/api/access_keys'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <h5 class="modal-title">Toggle State</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        <!-- <i data-feather="rotate-ccw" class="font-medium-2"></i> -->
+                        Rotate
+                    </button>
+                </div>
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">ID</label>
+                            <input type="text" id="id-column" class="form-control" placeholder="ID" name="id-column"
+                                readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Key</label>
+                            <input type="text" id="key-colomn" class="form-control" placeholder="Key" name="key-colomn"
+                                readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Secret</label>
+                            <input type="text" id="secret" class="form-control" placeholder="Secret" name="secret"
+                                readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Private</label>
+                            <input type="text" id="application" class="form-control" placeholder="Private"
+                                name="application" readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">App Name</label>
+                            <input type="text" id="app-name" class="form-control" placeholder="App Name"
+                                name="app-name" />
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--Resouces-->
+    <div *ngIf="href === '/api/resource'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Toggle State</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        Rotate
+                    </button>
+                </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Name</label>
+                            <input type="text" id="name-column" class="form-control" placeholder="Name"
+                                name="name-column" readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Application</label>
+                            <input type="text" id="application" class="form-control" placeholder="Name"
+                                name="application" readonly="readonly" />
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--Form Operation-->
+    <div *ngIf="href === '/api/operation'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Toggle State</h5> -->
+                <!-- <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        Rotate
+                    </button>
+                </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="last-name-column">Resources</label>
+                            <app-dropdown [optionData]="resourceOption"></app-dropdown>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="last-name-column">Action</label>
+                            <app-dropdown [optionData]="actionOption"></app-dropdown>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

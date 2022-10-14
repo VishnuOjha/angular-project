@@ -1,0 +1,732 @@
+
+{
+  "Data": {
+    "action": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "method": "GET",
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read action",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "method": "POST",
+            "name": "Read All",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read all ( paginated )",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:45.000Z",
+            "updatedAt": "2022-09-23T11:07:45.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "method": "GET",
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "method": "POST",
+        "name": "Demo",
+        "description": "Application Data",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "method": "PUT",
+        "name": "Demo",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "App Data",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "method": "GET",
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "access_key": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "secret": "d41d8cd98f00b204",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "name": "Read2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "secret": "d41d8cd98f00b204",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "id": 4,
+        "name": "Read4",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "update": {
+        "id": 2,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "access_log": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "api": "api1",
+            "resource": "resource1",
+            "caller": "caller",
+            "role": "role",
+            "method": "Get",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "policy effect": "policy effect1",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "api": "api2",
+            "resource": "resource2",
+            "caller": "caller",
+            "role": "role",
+            "method": "Get",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "policy effect": "policy effect2",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "api": "api1",
+        "resource": "resource1",
+        "caller": "caller",
+        "role": "role",
+        "method": "Get",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "policy effect": "policy effect1",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      }
+    },
+    "admin": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "email": "test@gmail.com",
+            "password": "Read action",
+            "role": "Role1",
+            "Phone": "12345678",
+            "profile_pic": "",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "name": "Read2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "email": "test2@gmail.com",
+            "password": "Read action",
+            "role": "Role2",
+            "Phone": "12345678",
+            "profile_pic": "",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read3",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "email": "test3@gmail.com",
+        "password": "Read action",
+        "role": "Role3",
+        "Phone": "12345678",
+        "profile_pic": "",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "email": "test4@gmail.com",
+        "password": "Read action",
+        "role": "Role4",
+        "Phone": "12345678",
+        "profile_pic": "",
+        "name": "Demo4",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "email": "test5@gmail.com",
+        "password": "Read action",
+        "role": "Role2",
+        "Phone": "12345678",
+        "profile_pic": "",
+        "name": "Demo5",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "email": "test6@gmail.com",
+        "password": "Read action",
+        "role": "Role2",
+        "Phone": "12345678",
+        "profile_pic": "",
+        "name": "Demo6",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "api_key": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "secret": "d41d8cd98f00b204",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "name": "Read2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "secret": "d41d8cd98f00b204",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "id": 4,
+        "name": "Read4",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "update": {
+        "id": 2,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "secret": "d41d8cd98f00b204",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "operation": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "resource": "resource",
+            "action": "action1",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read action",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "resource": "resource",
+            "action": "action2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read all ( paginated )",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:45.000Z",
+            "updatedAt": "2022-09-23T11:07:45.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "resource": "resource",
+        "action": "action1",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "resource": "resource4",
+        "action": "action4",
+        "description": "Application Data",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "resource": "resource2",
+        "action": "action2",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "App Data",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "resource": "resource1",
+        "action": "action1",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "permission": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "operation": "operation1",
+            "policy": "policy1",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read action",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "operation": "operation2",
+            "policy": "policy2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read all ( paginated )",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:45.000Z",
+            "updatedAt": "2022-09-23T11:07:45.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "operation": "operation1",
+        "policy": "policy1",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "operation": "operation4",
+        "policy": "policy4",
+        "description": "Application Data",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "operation": "operation2",
+        "policy": "policy2",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "App Data",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "operation": "operation1",
+        "policy": "policy1",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "policy": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read action",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "name": "Read All",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read all ( paginated )",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:45.000Z",
+            "updatedAt": "2022-09-23T11:07:45.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "name": "Demo",
+        "description": "Application Data",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "name": "Demo",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "App Data",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "resource": {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "application": "App1",
+            "description": "Read action",
+            "enabled": true
+          },
+          {
+            "id": 2,
+            "name": "Read2",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "application": "App2",
+            "description": "Read action 2",
+            "enabled": true
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "application": "App1",
+        "description": "Read action",
+        "enabled": true
+      },
+      "create": {
+        "id": 3,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "application": "App3",
+        "description": "Read action 3",
+        "enabled": true
+      },
+      "update": {
+        "id": 2,
+        "name": "Read2",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "application": "App2",
+        "description": "Read action 2",
+        "enabled": true
+      },
+      "patch": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "application": "App1",
+        "description": "Read action",
+        "enabled": true
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    },
+    "role":  {
+      "list_all": {
+        "count": 2,
+        "rows": [
+          {
+            "id": 1,
+            "name": "Read",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read action",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:16.000Z",
+            "updatedAt": "2022-09-23T11:07:16.000Z"
+          },
+          {
+            "id": 2,
+            "name": "Read All",
+            "code": "d41d8cd98f00b204e9800998ecf8427e",
+            "description": "Read all ( paginated )",
+            "enabled": true,
+            "deleted": false,
+            "createdAt": "2022-09-23T11:07:45.000Z",
+            "updatedAt": "2022-09-23T11:07:45.000Z"
+          }
+        ]
+      },
+      "list": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-09-23T11:07:16.000Z"
+      },
+      "create": {
+        "enabled": true,
+        "deleted": false,
+        "id": 4,
+        "name": "Demo",
+        "description": "Application Data",
+        "code": "4KtHU58y7jNzYBzEoz3qaW",
+        "updatedAt": "2022-10-01T15:06:10.521Z",
+        "createdAt": "2022-10-01T15:06:10.521Z"
+      },
+      "update": {
+        "id": 2,
+        "name": "Demo",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "App Data",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:45.000Z",
+        "updatedAt": "2022-10-01T15:06:46.000Z"
+      },
+      "patch": {
+        "id": 1,
+        "name": "Read",
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "description": "Read action",
+        "enabled": true,
+        "deleted": false,
+        "createdAt": "2022-09-23T11:07:16.000Z",
+        "updatedAt": "2022-10-01T15:08:52.000Z"
+      },
+      "delete": {
+        "id": 2,
+        "code": "d41d8cd98f00b204e9800998ecf8427e",
+        "deleted": true
+      }
+    }
+  }
+}

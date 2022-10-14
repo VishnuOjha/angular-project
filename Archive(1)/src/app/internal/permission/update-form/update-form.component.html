@@ -1,0 +1,122 @@
+<div>
+    <!--Update form for Permission-->
+    <div *ngIf="href === '/permission'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Update Permission</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        Rotate
+                    </button>
+                </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Name</label>
+                            <input type="text" id="name-column" class="form-control" placeholder="Name"
+                                name="fname-column" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mb-1">
+                            <label class="form-label" for="country-floating">Role</label>
+                            <app-dropdown [optionData]="optionData"></app-dropdown>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--Policy-->
+    <div *ngIf="href === '/permission/policies'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Update Policy</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                Rotate
+                </button>
+            </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="mb-1">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Name</label>
+                            <input type="text" id="name-column" class="form-control" placeholder="Name"
+                                name="fname-column" />
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--Roles-->
+    <div *ngIf="href === '/permission/roles'">
+        <form class="form">
+            <div class="modal-header align-items-center mb-1">
+                <div class="form-check form-check-primary form-switch">
+                    <input type="checkbox" checked class="form-check-input" id="customSwitch3" />
+                </div>
+                <!-- <h5 class="modal-title">Update Role</h5>
+                <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+                    <button type="submit" class="btn btn-primary me-1">
+                        <img src="../../assets/images/icons/rotate-ccw.svg" alt="">
+                        Rotate
+                    </button>
+                </div> -->
+            </div>
+            <div class="card-body" style="height: 80vh;">
+                <div class="row">
+                    <div class="mb-1">
+                        <div class="mb-1">
+                            <label class="form-label" for="first-name-column">Name</label>
+                            <input type="text" id="name-column" class="form-control" placeholder="Name"
+                                name="fname-column" />
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" row="3" id="exampleFormControlTextarea1"
+                            placeholder="Description"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

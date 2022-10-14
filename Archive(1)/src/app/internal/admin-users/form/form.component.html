@@ -1,0 +1,77 @@
+<form [formGroup]="registerForm" class="form">
+    <div class="modal-header align-items-center mb-1">
+        <h5 class="modal-title">Add Admin User</h5>
+        <div class="todo-item-action d-flex align-items-center justify-content-between ms-auto">
+            <span class="todo-item-favorite cursor-pointer me-75"><i data-feather="star"
+                    class="font-medium-2"></i></span>
+            <i data-feather="x" class="cursor-pointer" data-bs-dismiss="modal" stroke-width="3"></i>
+        </div>
+    </div>
+    <div class="modal-body flex-grow-1 pb-sm-0 pb-3">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="mb-1">
+                    <label class="form-label" for="first-name-column">Name</label>
+                    <input type="text" id="name-column" class="form-control" placeholder="Name" name="name-column"
+                        formControlName="name" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                        <div *ngIf="f.name.errors.required">Name is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-1">
+                    <label class="form-label" for="email-id-column">Email</label>
+                    <input type="email" id="email-id-column" class="form-control" name="email-id-column"
+                        placeholder="Email" formControlName="email" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-1">
+                    <label class="form-label" for="last-name-column">Password</label>
+                    <input type="text" id="password" class="form-control" placeholder="password" name="password"
+                        formControlName="password" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-1">
+                    <label class="form-label" for="country-floating">Role</label>
+                    <app-dropdown [optionData]="optionData"></app-dropdown>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-1">
+                    <label class="form-label" for="country-floating">Phone</label>
+                    <input type="number" id="phone" class="form-control" name="Phone" placeholder="Phone Number"
+                        formControlName="mobile" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" />
+                    <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                        <div *ngIf="f.mobile.errors.required">Phone Number is required</div>
+                        <div *ngIf="f.mobile.errors.minlength">Phone Number be at least 10 characters</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-1">
+            <button (click)="onSubmit()" class="btn btn-primary add-todo-item me-1">Create</button>
+            <button type="button" class="btn btn-outline-secondary add-todo-item" data-bs-dismiss="modal">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-primary update-btn update-todo-item me-1 d-none">Update</button>
+            <button type="button" class="btn btn-outline-danger update-btn d-none" data-bs-dismiss="modal">
+                Delete
+            </button>
+        </div>
+    </div>
+</form>

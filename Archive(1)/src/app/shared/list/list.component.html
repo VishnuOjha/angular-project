@@ -1,0 +1,168 @@
+<div class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click"
+    data-menu="vertical-menu-modern" data-col="">
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-body">
+                <section id="ajax-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">{{heading}}</h4>
+                                    <div *ngIf="href !== '/access_logs'">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#new-task-modal">
+                                            Add {{addButtonLabel}}
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-datatable">
+                                    <div id="DataTables_Table_0_wrapper"
+                                        class="dataTables_wrapper dt-bootstrap5 no-footer">
+                                        <div class="d-flex justify-content-between align-items-center mx-0 row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="dataTables_length" id="DataTables_Table_0_length">
+                                                    <label>
+                                                        <div class="d-flex align-items-center space-x-2">
+                                                            show
+                                                            <select class="form-select" [(ngModel)]="service.pageSize">
+                                                                <option [ngValue]="2">2 </option>
+                                                                <option [ngValue]="4">4 </option>
+                                                                <option [ngValue]="6">6 </option>
+                                                            </select>
+                                                            entries
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div id="DataTables_Table_0_filter"
+                                                    class="dataTables_filter dataTables_wrapper">
+                                                    <label style="float: right;">
+                                                        <div class="d-flex align-items-center">
+                                                            search
+                                                            <input type="search" class="form-control" placeholder=""
+                                                                aria-controls="DataTables_Table_0" name="searchTerm"
+                                                                [(ngModel)]="service.searchTerm">
+                                                        </div>
+                                                    </label>
+                                                    <!-- <span class="ml-3"
+                                                        *ngIf="service.loading$ | async">Loading...</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="datatables-ajax table table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <th scope="col">#</th> -->
+                                                    <th scope="row" sortable="name" (sort)="onSort($event)"
+                                                        *ngIf="listHeading.length > 0">
+                                                        {{listHeading[0].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="area" (sort)="onSort($event)"
+                                                        *ngIf="listHeading.length > 1">
+                                                        {{listHeading[1].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population" (sort)="onSort($event)"
+                                                        *ngIf="listHeading.length > 2">
+                                                        {{listHeading[2].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 3">
+                                                        {{listHeading[3].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 4">
+                                                        {{listHeading[4].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 5">
+                                                        {{listHeading[5].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 6">
+                                                        {{listHeading[6].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 7">
+                                                        {{listHeading[7].name
+                                                        }}
+                                                    </th>
+                                                    <th scope="col" sortable="population"
+                                                        *ngIf="listHeading.length > 8">
+                                                        {{listHeading[8].name
+                                                        }}
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let country of countries$ | async">
+                                                    <th scope="row" *ngIf="listHeading.length >= 0">{{ country.id }}
+                                                    </th>
+                                                    <td *ngIf="listHeading.length > 1">
+                                                        <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag"
+                                                            class="mr-2" style="width: 20px" /> -->
+                                                        <ngb-highlight [result]="country.name"
+                                                            [term]="service.searchTerm">
+                                                        </ngb-highlight>
+                                                    </td>
+                                                    <td *ngIf="listHeading.length > 2">
+                                                        <ngb-highlight [result]="country.area | number"
+                                                            [term]="service.searchTerm"></ngb-highlight>
+                                                    </td>
+                                                    <td *ngIf="listHeading.length > 3">
+                                                        <ngb-highlight [result]="country.population | number"
+                                                            [term]="service.searchTerm"></ngb-highlight>
+                                                    </td>
+                                                    <td *ngIf="listHeading.length > 4">
+                                                        <div *ngIf="href === '/api' || href === '/api/access_keys'"
+                                                            [ngClass]="country.status === 'enable' ? 'badge rounded-pill badge-light-success me-1': 'badge rounded-pill badge-light-danger me-1'">
+                                                            <ngb-highlight [result]="country.status"
+                                                                [term]="service.searchTerm">
+                                                            </ngb-highlight>
+                                                        </div>
+                                                    </td>
+                                                    <td *ngIf="listHeading.length > 5 ">
+                                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#update-modal"
+                                                            *ngIf="href !== '/access_logs'">
+                                                            <!-- <i data-feather="edit" class="me-50"></i> -->
+                                                            <img src="../../assets/images/icons/edit.svg" alt="Edit" />
+                                                            <!-- <span>Edit</span> -->
+                                                        </button>
+                                                    </td>
+                                                    <td *ngIf="listHeading.length > 6"></td>
+                                                    <td *ngIf="listHeading.length > 7"></td>
+                                                    <td *ngIf="listHeading.length > 8"></td>
+                                                    <!-- <td *ngIf="listHeading.length > 9"></td> -->
+                                                    <!-- <td *ngIf="listHeading.length > 10"></td> -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="d-flex justify-content-between p-2">
+                                            <label style="margin-top: '10px';">showing 1 to {{service.pageSize}} of 13
+                                                values</label>
+                                            <ngb-pagination [collectionSize]="(total$ | async)!" [(page)]="service.page"
+                                                [pageSize]="service.pageSize">
+                                            </ngb-pagination>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
